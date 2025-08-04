@@ -1,0 +1,285 @@
+.category-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-main {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 30px 0;
+}
+
+.category-header {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumbs a {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  margin: 0 8px;
+}
+
+.category-title {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.category-count {
+  color: #666;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+
+.category-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Используем те же стили что и в CompaniesBlock */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-card:visited {
+  color: inherit;
+}
+
+.company-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.company-logo-image {
+  width: 100%;
+  max-width: 200px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.company-logo-text {
+  background: #495057;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  min-width: 120px;
+  max-width: 200px;
+  word-break: break-word;
+}
+
+.company-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-category {
+  background: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
+.company-date {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-color: #dc3545;
+}
+
+.company-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Цвета логотипов */
+.company-card:nth-child(1) .company-logo-text {
+  background: #00a650;
+}
+
+.company-card:nth-child(2) .company-logo-text {
+  background: #ffdd2d;
+  color: #000;
+}
+
+.company-card:nth-child(3) .company-logo-text {
+  background: #6a4fff;
+}
+
+.company-card:nth-child(4) .company-logo-text {
+  background: #005aff;
+}
+
+.company-card:nth-child(5) .company-logo-text {
+  background: #ffdd00;
+  color: #000;
+}
+
+.company-card:nth-child(6) .company-logo-text {
+  background: #e30611;
+}
+
+.company-card:nth-child(7) .company-logo-text {
+  background: #ff6900;
+}
+
+.company-card:nth-child(8) .company-logo-text {
+  background: #ffde00;
+  color: #000;
+}
+
+/* Сообщение об отсутствии компаний */
+.no-companies {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 60px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.no-companies h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.no-companies p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.back-home-btn {
+  background: #dc3545;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background: #c82333;
+  text-decoration: none;
+  color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .category-main {
+    padding: 20px 0;
+  }
+
+  .category-header {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .category-count {
+    font-size: 1.4rem;
+  }
+
+  .companies-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .company-card {
+    padding: 15px;
+    min-height: 250px;
+  }
+
+  .company-logo-text {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .no-companies {
+    padding: 40px 20px;
+  }
+} 

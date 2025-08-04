@@ -1,0 +1,226 @@
+.companies-section {
+  background: #fff;
+  padding: 40px 0;
+}
+
+.section-title {
+  color: #dc3545;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: #dc3545;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-card:visited {
+  color: inherit;
+}
+
+.company-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.company-logo-text {
+  background: #495057;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  min-width: 120px;
+  max-width: 200px;
+  word-break: break-word;
+}
+
+.company-logo-image {
+  width: 100%;
+  max-width: 200px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.company-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-category {
+  background: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
+.company-date {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-color: #dc3545;
+}
+
+.company-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Различные цвета логотипов для компаний с текстовыми логотипами */
+.company-card:nth-child(1) .company-logo-text {
+  background: #1a1a1a; /* MotorZen - черный */
+  color: white;
+}
+
+.company-card:nth-child(2) .company-logo-text {
+  background: #00a650; /* Сбербанк - зеленый */
+}
+
+.company-card:nth-child(3) .company-logo-text {
+  background: #ffdd2d; /* Яндекс - желтый */
+  color: #000;
+}
+
+.company-card:nth-child(4) .company-logo-text {
+  background: #6a4fff; /* Wildberries - фиолетовый */
+}
+
+.company-card:nth-child(5) .company-logo-text {
+  background: #005aff; /* Ozon - синий */
+}
+
+.company-card:nth-child(6) .company-logo-text {
+  background: #ffdd00; /* Тинькофф - желтый */
+  color: #000;
+}
+
+.company-card:nth-child(7) .company-logo-text {
+  background: #e30611; /* МТС - красный */
+}
+
+.company-card:nth-child(8) .company-logo-text {
+  background: #ff6900; /* Магнит - оранжевый */
+}
+
+.company-card:nth-child(9) .company-logo-text {
+  background: #ffde00; /* Билайн - желтый */
+  color: #000;
+}
+
+.company-card:nth-child(10) .company-logo-text {
+  background: #26a5dd; /* Пятёрочка - голубой */
+}
+
+.company-card:nth-child(11) .company-logo-text {
+  background: #ee0d2e; /* М.Видео - красный */
+}
+
+.company-card:nth-child(12) .company-logo-text {
+  background: #1f7dd6; /* Авито - синий */
+}
+
+.company-card:nth-child(13) .company-logo-text {
+  background: #00b956; /* МегаФон - зеленый */
+}
+
+.company-card:nth-child(14) .company-logo-text {
+  background: #ff6200; /* DNS - оранжевый */
+}
+
+.company-card:nth-child(15) .company-logo-text {
+  background: #0077c8; /* Лента - синий */
+}
+
+.company-card:nth-child(16) .company-logo-text {
+  background: #003f7f; /* Газпром - темно-синий */
+}
+
+.company-card:nth-child(17) .company-logo-text {
+  background: #ed1c24; /* Роснефть - красный */
+}
+
+@media (max-width: 768px) {
+  .companies-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .company-card {
+    padding: 15px;
+    min-height: 250px;
+  }
+  
+  .company-logo-text {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+  }
+  
+  .company-name {
+    font-size: 1rem;
+  }
+} 

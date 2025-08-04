@@ -1,0 +1,5 @@
+<svg width="120" height="60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="60" fill="#0066CC" rx="8"/>
+  <text x="60" y="25" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">СИТИ</text>
+  <text x="60" y="40" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">ЛИНК</text>
+</svg>
