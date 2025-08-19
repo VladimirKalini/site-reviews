@@ -1,57 +1,57 @@
 export const companiesData = {
-  'motorzen': {
-    name: 'MotorZen отзывы',
+  '999auto': {
+    name: '999auto.ru отзывы',
     category: 'Автомобили',
     categorySlug: 'automobiles',
-    date: '16.12.2024',
-    image: '/images/motorzen.jpg',
+    date: '23.08.2023',
+    image: '/images/logos/999auto.svg',
     reviews: [
       {
         id: 1,
-        title: 'Отличный автосервис!',
-        author: 'Петр',
-        timeAgo: '3 часа назад',
-        content: 'Ремонтировал двигатель в MotorZen. Мастера профессиональные, объяснили все проблемы подробно. Цены адекватные, качество работы на высоте. Машина как новая! Буду обращаться еще.',
+        title: 'Качественные моторы!',
+        author: 'Дмитрий',
+        timeAgo: '2 часа назад',
+        content: 'Заказал двигатель для BMW. Цена не самая дешевая, но качество на высоте! Менеджер Александр профессионально проконсультировал, подобрал идеальный вариант. Доставка за 3 дня по России!',
         rating: 5
       },
       {
         id: 2,
-        title: 'Быстрая диагностика',
-        author: 'Анна',
-        timeAgo: '1 день назад',
-        content: 'Сделали диагностику за 30 минут как и обещали. Нашли проблему с тормозами, которую другие сервисы не видели. Исправили быстро, теперь машина тормозит отлично.',
+        title: 'Отличные специалисты',
+        author: 'Сергей',
+        timeAgo: '5 часов назад',
+        content: 'Покупал мотор для Mercedes. Менеджеры очень грамотные, все объяснили про совместимость, гарантию. Не самые низкие цены, но за качество и сервис готов переплатить. Мотор работает идеально!',
         rating: 5
       },
       {
         id: 3,
-        title: 'Дорого, но качественно',
-        author: 'Михаил',
-        timeAgo: '3 дня назад',
-        content: 'Цены выше среднего, но работу делают качественно. Заменили сцепление, всё работает идеально. Дают гарантию на работы. За качество готов переплатить.',
-        rating: 4
+        title: 'Быстрая доставка',
+        author: 'Владимир',
+        timeAgo: '1 день назад',
+        content: 'Нужен был срочно двигатель для Audi. Обещали доставить за 2 дня - привезли точно в срок! Упаковка надежная, все документы в порядке. Качество продукции отличное, работает без нареканий.',
+        rating: 5
       },
       {
         id: 4,
-        title: 'Обманули с ценой!',
-        author: 'Сергей',
-        timeAgo: '5 дней назад',
-        content: 'По телефону сказали одну цену, приехал - в 2 раза дороже! Говорят что "не учли сложность работ". Развод чистой воды. Больше не поеду к ним!',
-        rating: 1
+        title: 'Хорошая продукция',
+        author: 'Андрей',
+        timeAgo: '3 дня назад',
+        content: 'Покупал мотор для Volkswagen. Цены выше чем у конкурентов, но качество того стоит. Все детали оригинальные, гарантия год. Менеджер помог с выбором, очень доволен покупкой!',
+        rating: 4
       },
       {
         id: 5,
-        title: 'Некачественные запчасти',
-        author: 'Владимир',
+        title: 'Профессиональный подход',
+        author: 'Михаил',
         timeAgo: '1 неделя назад',
-        content: 'Поставили дешевые китайские запчасти по цене оригинальных. Через месяц всё развалилось. В гарантии отказали, сказали что это "естественный износ".',
-        rating: 2
+        content: 'Искал двигатель для редкой модели Toyota. В других местах не могли найти. Здесь менеджер Елена за день нашла нужный мотор, организовала доставку из Германии. Не дешево, но результат отличный!',
+        rating: 5
       },
       {
         id: 6,
-        title: 'Хорошие мастера',
-        author: 'Елена',
+        title: 'Надежный поставщик',
+        author: 'Игорь',
         timeAgo: '10 дней назад',
-        content: 'Ремонтировали подвеску. Мастера знающие, работают аккуратно. Объяснили что и зачем делают. Цена соответствует качеству. Рекомендую этот сервис.',
+        content: 'Уже третий раз покупаю запчасти и моторы. Всегда качественная продукция, быстрая доставка. Цены не бюджетные, но качество и сервис оправдывают стоимость. Рекомендую автосервисам!',
         rating: 4
       }
     ]
@@ -263,7 +263,7 @@ export const companiesData = {
     category: 'Банки',
     categorySlug: 'banks',
     date: '22.03.2024',
-    image: '/images/logos/alfabank.svg',
+    image: '/images/logos/Alfa-Bank.png',
     reviews: [
       {
         id: 1,
@@ -305,7 +305,7 @@ export const companiesData = {
     category: 'Банки',
     categorySlug: 'banks',
     date: '15.08.2023',
-    image: '/images/logos/vtb.svg',
+    image: '/images/logos/VTB.png',
     reviews: [
       {
         id: 1,
@@ -339,7 +339,7 @@ export const companiesData = {
     category: 'Мобильная связь',
     categorySlug: 'telecom',
     date: '07.01.2025',
-    image: '/images/logos/tele2.svg',
+    image: '/images/logos/tele2.png',
     reviews: [
       {
         id: 1,
@@ -381,7 +381,7 @@ export const companiesData = {
     category: 'IT и интернет',
     categorySlug: 'it',
     date: '18.11.2024',
-    image: '/images/logos/kinopoisk.svg',
+    image: '/images/logos/kinopoisk.jpg',
     reviews: [
       {
         id: 1,
@@ -423,7 +423,7 @@ export const companiesData = {
     category: 'Торговля',
     categorySlug: 'retail',
     date: '24.05.2022',
-    image: '/images/logos/vkusvill.svg',
+    image: '/images/logos/VkusVIl.png',
     reviews: [
       {
         id: 1,
@@ -465,7 +465,7 @@ export const companiesData = {
     category: 'Электроника',
     categorySlug: 'electronics',
     date: '13.09.2023',
-    image: '/images/logos/citilink.svg',
+    image: '/images/logos/Sitilnik.png',
     reviews: [
       {
         id: 1,
@@ -507,7 +507,7 @@ export const companiesData = {
     category: 'Интернет-магазины',
     categorySlug: 'shops',
     date: '06.02.2025',
-    image: '/images/logos/lamoda.svg',
+    image: '/images/logos/Lamoda.jpg',
     reviews: [
       {
         id: 1,
@@ -549,7 +549,7 @@ export const companiesData = {
     category: 'Ресторан',
     categorySlug: 'restaurants',
     date: '31.07.2024',
-    image: '/images/logos/dodo.svg',
+    image: '/images/logos/DodoPizza.jpeg',
     reviews: [
       {
         id: 1,
@@ -591,7 +591,7 @@ export const companiesData = {
     category: 'Объявления',
     categorySlug: 'classifieds',
     date: '10.04.2021',
-    image: '/images/logos/youla.svg',
+    image: '/images/logos/Юла.png',
     reviews: [
       {
         id: 1,
@@ -633,7 +633,7 @@ export const companiesData = {
     category: 'Электроника',
     categorySlug: 'electronics',
     date: '28.12.2022',
-    image: '/images/logos/eldorado.svg',
+    image: '/images/logos/Eldorado.png',
     reviews: [
       {
         id: 1,

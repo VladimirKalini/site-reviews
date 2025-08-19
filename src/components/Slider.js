@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Slider.css';
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const slides = [
     {
       id: 1,
-      company: 'MotorZen',
-      logoImage: '/images/logos/motorzen.png',
+      company: '999auto',
+      logoImage: '/images/logos/999auto.svg',
       category: 'Автомобили',
-      description: '🚗 MOTORZEN запустил НОВЫЙ СЕРВИС: Диагностика за 30 минут! Водители в восторге...',
-      date: '16.12.2024',
-      image: '/images/motorzen.jpg'
+      description: '🚗 999AUTO.RU - Лучшие специалисты и превосходное качество! Моторы европейского уровня с быстрой доставкой...',
+      date: '02.08.2025',
+      image: '/images/999auto.jpg'
     },
     {
       id: 2,
@@ -70,22 +71,51 @@ const Slider = () => {
     }
   ];
 
+  // Автопереключение слайдов
+  useEffect(() => {
+    if (!isAutoPlay) return;
+    
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000); // 5 секунд
+
+    return () => clearInterval(interval);
+  }, [isAutoPlay, slides.length]);
+
   const nextSlide = () => {
+    setIsAutoPlay(false);
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   const prevSlide = () => {
+    setIsAutoPlay(false);
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   const goToSlide = (index) => {
+    setIsAutoPlay(false);
     setCurrentSlide(index);
   };
+
+  // Возобновить автопереключение через 10 секунд после ручного управления
+  useEffect(() => {
+    if (!isAutoPlay) {
+      const timeout = setTimeout(() => {
+        setIsAutoPlay(true);
+      }, 10000);
+      
+      return () => clearTimeout(timeout);
+    }
+  }, [isAutoPlay]);
 
   return (
     <section className="slider-section">
       <div className="container">
-        <div className="slider">
+        <div 
+          className="slider"
+          onMouseEnter={() => setIsAutoPlay(false)}
+          onMouseLeave={() => setIsAutoPlay(true)}
+        >
           <div className="slider-track" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {slides.map((slide, index) => (
               <div key={slide.id} className="slide">

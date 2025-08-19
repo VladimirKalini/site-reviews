@@ -1,68 +1,25 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useCompanies } from '../hooks/useCompanies';
+import { useReviews } from '../hooks/useReviews';
 import './CompanySidebar.css';
 
 const CompanySidebar = () => {
   const [activeTab, setActiveTab] = useState('new');
+  const { companies } = useCompanies();
+  const { reviews } = useReviews();
 
-  const relatedCompanies = [
-    {
-      id: 1,
-      name: 'Ekscentrik.ru интернет-магазин отзывы',
-      logo: 'APOGEJ',
-      date: '29.04.2025',
-      slug: 'ekscentrik-ru'
-    },
-    {
-      id: 2,
-      name: 'Франшиза Первый Визовый Центр отзывы, платят или нет?',
-      logo: 'ПЕРВЫЙ ВИЗОВЫЙ',
-      date: '18.04.2025',
-      slug: 'pervyj-vizovyj-centr'
-    },
-    {
-      id: 3,
-      name: 'Finrex отзывы, платят или нет?',
-      logo: 'FinRex',
-      date: '18.04.2025',
-      slug: 'finrex'
-    },
-    {
-      id: 4,
-      name: 'Apogej.ru интернет-магазин отзывы',
-      logo: 'APOGEJ',
-      date: '15.03.2025',
-      slug: 'apogej-ru'
-    },
-    {
-      id: 5,
-      name: 'ПО-МОТОР РФ отзывы/> Виджет',
-      logo: 'ПО-МОТОР',
-      date: '24.02.2025',
-      slug: 'po-motor-rf'
-    },
-    {
-      id: 6,
-      name: 'Франшиза ASIA STORE',
-      logo: 'ASIA',
-      date: '24.02.2025',
-      slug: 'asia-store'
-    },
-    {
-      id: 7,
-      name: 'Blum',
-      logo: 'B',
-      date: '24.02.2025',
-      slug: 'blum'
-    },
-    {
-      id: 8,
-      name: 'Arbitrage Crypto Trader',
-      logo: 'ARCT',
-      date: '24.02.2025',
-      slug: 'arbitrage-crypto-trader'
-    }
-  ];
+  // Сортируем компании по дате для "новых"
+  const newCompanies = companies
+    .sort((a, b) => new Date(b.date.split('.').reverse().join('-')) - new Date(a.date.split('.').reverse().join('-')))
+    .slice(0, 8);
+
+  // Сортируем компании случайно для "популярных" 
+  const popularCompanies = [...companies]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 8);
+
+  const displayedCompanies = activeTab === 'new' ? newCompanies : popularCompanies;
 
   return (
     <aside className="company-sidebar">
@@ -82,18 +39,28 @@ const CompanySidebar = () => {
       </div>
 
       <div className="sidebar-content">
-        {relatedCompanies.map((company) => (
+        {displayedCompanies.map((company) => (
           <Link 
             key={company.id} 
             to={`/company/${company.slug}`} 
             className="sidebar-company-card"
           >
             <div className="sidebar-company-logo">
-              <span>{company.logo}</span>
+              <img 
+                src={company.logoImage} 
+                alt={`${company.name} логотип`}
+                className="sidebar-logo-img"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'block';
+                }}
+              />
+              <span className="sidebar-logo-text" style={{display: 'none'}}>{company.logo}</span>
             </div>
             <div className="sidebar-company-info">
               <h4 className="sidebar-company-name">{company.name}</h4>
               <span className="sidebar-company-date">{company.date}</span>
+              <span className="sidebar-company-category">{company.category}</span>
             </div>
           </Link>
         ))}

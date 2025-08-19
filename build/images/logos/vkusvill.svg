@@ -1,0 +1,5 @@
+<svg width="120" height="60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="60" fill="#00A651" rx="8"/>
+  <text x="60" y="25" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">ВКУС</text>
+  <text x="60" y="40" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">ВИЛЛ</text>
+</svg>

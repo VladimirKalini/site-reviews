@@ -3,13 +3,13 @@ import { generateRandomDate } from '../utils/dateGenerator.js';
 export const companies = [
   {
     id: 1,
-    name: 'MotorZen отзывы',
+    name: '999auto.ru отзывы',
     category: 'Автомобили',
     date: '23.08.2023',
-    description: 'Автосервис и продажа автомобилей. Отзывы клиентов о качестве ремонта, обслуживании и продаже автомобилей.',
-    logo: 'MOTORZEN',
-    logoImage: '/images/logos/motorzen.png',
-    slug: 'motorzen'
+    description: 'Интернет-магазин автозапчастей и моторов. Отзывы клиентов о качестве продукции, сервисе и доставке.',
+    logo: '999AUTO',
+    logoImage: '/images/logos/999auto.svg',
+    slug: '999auto'
   },
   {
     id: 2,
@@ -179,7 +179,7 @@ export const companies = [
     date: '22.03.2024',
     description: 'Частный российский банк. Отзывы клиентов о банковских картах, кредитах и мобильном банкинге.',
     logo: 'АЛЬФА-БАНК',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/Alfa-Bank.png',
     slug: 'alfabank'
   },
   {
@@ -189,7 +189,7 @@ export const companies = [
     date: '15.08.2023',
     description: 'Второй по величине банк России. Отзывы о корпоративном и розничном банкинге, ипотеке.',
     logo: 'ВТБ',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/VTB.png',
     slug: 'vtb'
   },
   {
@@ -199,7 +199,7 @@ export const companies = [
     date: '07.01.2025',
     description: 'Федеральный оператор мобильной связи. Отзывы о тарифах без переплат и качестве связи.',
     logo: 'ТЕЛЕ2',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/tele2.png',
     slug: 'tele2'
   },
   {
@@ -209,7 +209,7 @@ export const companies = [
     date: '18.11.2024',
     description: 'Российский кинопортал и стриминговый сервис. Отзывы о фильмах, сериалах и подписке.',
     logo: 'КИНОПОИСК',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/kinopoisk.jpg',
     slug: 'kinopoisk'
   },
   {
@@ -219,7 +219,7 @@ export const companies = [
     date: '24.05.2022',
     description: 'Сеть магазинов здорового питания. Отзывы о качестве продуктов и концепции магазинов.',
     logo: 'ВКУСВИЛЛ',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/VkusVIl.png',
     slug: 'vkusvill'
   },
   {
@@ -229,7 +229,7 @@ export const companies = [
     date: '13.09.2023',
     description: 'Сеть магазинов цифровой техники. Отзывы покупателей о компьютерах, смартфонах и гаджетах.',
     logo: 'СИТИЛИНК',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/Sitilnik.png',
     slug: 'citilink'
   },
   {
@@ -239,7 +239,7 @@ export const companies = [
     date: '06.02.2025',
     description: 'Интернет-магазин одежды и обуви. Отзывы о качестве товаров, доставке и возвратах.',
     logo: 'LAMODA',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/Lamoda.jpg',
     slug: 'lamoda'
   },
   {
@@ -249,7 +249,7 @@ export const companies = [
     date: '31.07.2024',
     description: 'Сеть пиццерий с доставкой. Отзывы о качестве пиццы, скорости доставки и обслуживании.',
     logo: 'ДОДО ПИЦЦА',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/DodoPizza.jpeg',
     slug: 'dodo'
   },
   {
@@ -259,7 +259,7 @@ export const companies = [
     date: '10.04.2021',
     description: 'Сервис объявлений и торговая площадка. Отзывы пользователей о покупках и продажах.',
     logo: 'ЮЛА',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/Юла.png',
     slug: 'youla'
   },
   {
@@ -269,7 +269,7 @@ export const companies = [
     date: '28.12.2022',
     description: 'Сеть магазинов электроники и бытовой техники. Отзывы о покупках, кредитах и гарантии.',
     logo: 'ЭЛЬДОРАДО',
-    logoImage: '/images/logos/placeholder.svg',
+    logoImage: '/images/logos/Eldorado.png',
     slug: 'eldorado'
   }
 ];
