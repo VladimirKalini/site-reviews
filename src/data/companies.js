@@ -8,7 +8,7 @@ export const companies = [
     date: '23.08.2023',
     description: 'Интернет-магазин автозапчастей и моторов. Отзывы клиентов о качестве продукции, сервисе и доставке.',
     logo: '999AUTO',
-    logoImage: '/images/logos/999auto.svg',
+    logoImage: '/images/logos/999auto.jpg',
     slug: '999auto'
   },
   {

@@ -77,12 +77,12 @@
 
 .company-logo-image {
   width: 100%;
-  max-width: 200px;
-  height: 80px;
+  max-width: 250px;
+  height: 120px;
   object-fit: contain;
   border-radius: 8px;
   background: transparent;
-  padding: 0;
+  padding: 10px;
   border: none;
 }
 

@@ -51,12 +51,13 @@
 }
 
 .company-logo-img {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   display: inline-block;
-  min-width: 200px;
-  height: 80px;
+  min-width: 280px;
+  height: 120px;
   object-fit: contain;
+  padding: 15px;
   backdrop-filter: blur(10px);
 }
 
